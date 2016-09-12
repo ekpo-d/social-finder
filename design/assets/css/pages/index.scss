@@ -3,12 +3,115 @@
 @import '../skeleton';
 @import '../placeholders';
 
-h1{
-  font-size: 10em;
+
+video#bgvid{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(../../img/bg.png);
+  background-size: cover;
 }
 
-@media screen and (max-width: 768px){
-  h1{
-    font-size: 2em;
+#index{
+  height: 100vh;
+  background-color: rgba(8, 135, 193, 0.35);
+
+  .text{
+    padding-top: 25vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+
+    h1{
+      padding: 0 50px;
+      font-size: 8em;
+      display: inline-block;
+      margin-bottom: 0;
+    }
+    p{
+      padding-top: 20px;
+      font-size: 1.8em;
+    }
+
   }
+  .links{
+    display: flex;
+    justify-content: center;
+
+    p{
+      display: inline-block;
+      padding: 5px 40px;
+      font-size: 1.3em;
+      margin-bottom: 0;
+    }
+    .b-round{
+      border: 2px solid white;
+      margin-right: 30px;
+    }
+    .facebook{
+      &:hover{
+        path{
+          fill: #3b5998;
+        }
+      }
+    }
+    .twitter{
+      &:hover{
+        path{
+          fill: #36b9ff;
+        }
+      }
+    }
+    .instagram{
+      &:hover{
+        path{
+          fill: #bc39a8;
+        }
+      }
+    }
+    .linkedin{
+      &:hover{
+        path{
+          fill: #007bb6;
+        }
+      }
+    }
+    .github{
+      &:hover{
+        path{
+          fill: #201e1f;
+        }
+      }
+    }
+    svg{
+      transition: 0.8s;
+      height: 50px;
+      width: 50px;
+      margin: 0 30px;
+
+      path{
+        transition: 0.8s;
+        fill: white;
+      }
+    }
+  }
+
+  // .lt-blue{
+  //   color: #0887c1;
+  // }
+  // .blue{
+  //   color: #01315f;
+  // }
+
 }
