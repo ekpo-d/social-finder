@@ -1,0 +1,239 @@
+@import '../normalize';
+@import '../animate';
+@import '../skeleton';
+@import '../placeholders';
+
+
+video#bgvid{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(../../img/bg.png);
+  background-size: cover;
+}
+
+#index{
+  height: 100vh;
+  background-color: rgba(8, 135, 193, 0.35);
+
+  .text{
+    padding-top: 20vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+
+    h1{
+      padding: 0 50px;
+      font-size: 8em;
+      display: inline-block;
+      margin-bottom: 0;
+    }
+    p{
+      padding-top: 20px;
+      font-size: 1.8em;
+    }
+
+  }
+  .links{
+    display: flex;
+    justify-content: center;
+
+    .drop{
+      display: none;
+      position: absolute;
+      margin-top: 30px;
+      border-radius: 0;
+      width: inherit;
+    }
+    button{
+      padding: 4px 40px;
+      font-size: 1.3em;
+      border: 2px solid white;
+      margin-right: 30px;
+      color: white;
+      height: auto;
+      border-radius: 0;
+      @extend %transition;
+
+      &:hover{
+        color: black;
+        background: white;
+      }
+    }
+    .facebook{
+      &:hover{
+        @include fillColor($facebook);
+      }
+    }
+    .twitter{
+      &:hover{
+        @include fillColor($twitter);
+      }
+    }
+    .instagram{
+      &:hover{
+        @include fillColor($instagram);
+      }
+    }
+    .linkedin{
+      &:hover{
+        @include fillColor($linkedin);
+      }
+    }
+    .github{
+      &:hover{
+        @include fillColor($github);
+      }
+    }
+    svg{
+      @extend %transition;
+      height: 50px;
+      width: 50px;
+
+      path{
+        @extend %transition;
+        fill: white;
+      }
+    }
+    .icon-container{
+      margin: 0 30px;
+    }
+  }
+  .drop-container{
+    width: 100%;
+    margin-top: 50px;
+
+    .drop{
+      display: flex;
+      align-items: center;
+      background-color: white;
+      position: absolute;
+      left: 50%;
+      margin-left: -200px;
+      max-width: 400px;
+    }
+    .all{
+      display: none;
+      .drop{
+        position: relative;
+      }
+      .fbAll{
+        @include hoverAction($facebook);
+      }
+      .twAll{
+        @include hoverAction($twitter);
+      }
+      .inAll{
+        @include hoverAction($instagram);
+      }
+      .liAll{
+        @include hoverAction($linkedin);
+      }
+      .ghAll{
+        @include hoverAction($github);
+      }
+    }
+    .facebookInput{
+      z-index: -101;
+      @include hoverAction($facebook);
+    }
+    .twitterInput{
+      z-index: -101;
+      @include hoverAction($twitter);
+    }
+    .instagramInput{
+      z-index: -101;
+      @include hoverAction($instagram);
+    }
+    .linkedinInput{
+      z-index: -101;
+      @include hoverAction($linkedin);
+    }
+    .githubInput{
+      z-index: -101;
+      @include hoverAction($github);
+    }
+  }
+}
+@media screen and (max-width: 1024px){
+    #index .text{
+      padding-top: 30vh;
+    h1{
+      font-size: 4em;
+    }
+    img{
+      width: 50px;
+      height: 50px;
+      }
+    }
+  }
+  @media screen and (min-width: 701px)
+                and (max-width: 768px){
+      #index .text{
+        h1{
+          font-size: 4em;
+        }
+        img{
+          width: 50px;
+          height: 50px;
+        }
+      }
+  }
+@media screen and (max-width: 700px){
+  #index .text{
+    padding-top: 10vh;
+  h1{
+    font-size: 3em;
+    padding: 0 10px;
+  }
+  p{
+    font-size: 1.2em;
+  }
+  img{
+    width: 40px;
+    height: 40px;
+    }
+  }
+  #index .links{
+    display: block;
+    max-width: 300px;
+    margin: 0 auto;
+
+    .b-round{
+      margin-right: 0;
+      font-size: 1.2em;
+    }
+    svg{
+      display: block;
+      height: 30px;
+      width: 30px;
+      margin: 20px auto;
+    }
+    .facebook{
+      margin-top: 50px;
+    }
+  }
+}
+@media screen and (max-width: 330px){
+  #index .text{
+    padding-top: 7vh;
+  h1{
+    font-size: 2.2em;
+    }
+  img{
+    width: 30px;
+    height: 30px;
+    }
+  }
+}
