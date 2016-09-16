@@ -10,10 +10,30 @@ $github : #201e1f;
 %transition{
   transition: $speed;
 }
+%navBar{
+  top: 50%;
+  left: 0;
+  position: fixed;
+  transform: translateX(-45%) translateY(-50%) rotate(90deg);
+  z-index: 1;
+
+  ul{
+    list-style: none;
+    margin-bottom: 0;
+  }
+  li{
+    display: inline-block;
+    font-size: 1.3em;
+    padding: 0 10px;
+  }
+}
 @mixin fillColor($color){
   path{
     fill: $color;
   }
+}
+@mixin bgColor($color){
+  background-color: $color;
 }
 
 @mixin hoverAction ($color){
@@ -47,5 +67,30 @@ $github : #201e1f;
           fill: $color;
         }
       }
-
+}
+@mixin inputBar($color){
+  @include bgColor($color);
+  .input-container{
+    background-color: white;
+    margin: 0 auto;
+    max-width: 300px;
+    margin-top: 40px;
+  }
+  .allpage{
+    display: flex;
+    align-items: center;
+    @include hoverAction($color);
+  }
+  .icon-wrap{
+    margin: 0 auto;
+    margin-top: 20%;
+    width: 40px;
+    svg{
+      height: 40px;
+      width: 40px;
+      path{
+        fill: white;
+      }
+    }
+  }
 }

@@ -49,13 +49,6 @@ video#bgvid{
     display: flex;
     justify-content: center;
 
-    .drop{
-      display: none;
-      position: absolute;
-      margin-top: 30px;
-      border-radius: 0;
-      width: inherit;
-    }
     button{
       padding: 4px 40px;
       font-size: 1.3em;
@@ -108,61 +101,6 @@ video#bgvid{
     }
     .icon-container{
       margin: 0 30px;
-    }
-  }
-  .drop-container{
-    width: 100%;
-    margin-top: 50px;
-
-    .drop{
-      display: flex;
-      align-items: center;
-      background-color: white;
-      position: absolute;
-      left: 50%;
-      margin-left: -200px;
-      max-width: 400px;
-    }
-    .all{
-      display: none;
-      .drop{
-        position: relative;
-      }
-      .fbAll{
-        @include hoverAction($facebook);
-      }
-      .twAll{
-        @include hoverAction($twitter);
-      }
-      .inAll{
-        @include hoverAction($instagram);
-      }
-      .liAll{
-        @include hoverAction($linkedin);
-      }
-      .ghAll{
-        @include hoverAction($github);
-      }
-    }
-    .facebookInput{
-      z-index: -101;
-      @include hoverAction($facebook);
-    }
-    .twitterInput{
-      z-index: -101;
-      @include hoverAction($twitter);
-    }
-    .instagramInput{
-      z-index: -101;
-      @include hoverAction($instagram);
-    }
-    .linkedinInput{
-      z-index: -101;
-      @include hoverAction($linkedin);
-    }
-    .githubInput{
-      z-index: -101;
-      @include hoverAction($github);
     }
   }
 }
