@@ -1,1 +1,96 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400';
+
+$speed: 0.6s;
+$facebook : #3b5998;
+$twitter : #36b9ff;
+$instagram : #bc39a8;
+$linkedin : #007bb6;
+$github : #201e1f;
+
+%transition{
+  transition: $speed;
+}
+%navBar{
+  top: 50%;
+  left: 0;
+  position: fixed;
+  transform: translateX(-45%) translateY(-50%) rotate(90deg);
+  z-index: 1;
+
+  ul{
+    list-style: none;
+    margin-bottom: 0;
+  }
+  li{
+    display: inline-block;
+    font-size: 1.3em;
+    padding: 0 10px;
+  }
+}
+@mixin fillColor($color){
+  path{
+    fill: $color;
+  }
+}
+@mixin bgColor($color){
+  background-color: $color;
+}
+
+@mixin hoverAction ($color){
+    path{
+      fill: $color;
+    }
+      p{
+        width: 150px;
+        margin: 0;
+        font-size: 1.3em;
+        color: $color;
+        padding: 0 20px;
+      }
+      input{
+        margin: 0;
+        border-top: 0;
+        border-bottom: 0;
+        border-radius: 0;
+        border-color: $color;
+        color: black;
+
+        &:hover{
+          border-color: $color;
+        }
+      }
+      svg{
+        height: 20px;
+        width: 50px;
+        padding: 0 20px;
+        path{
+          fill: $color;
+        }
+      }
+}
+@mixin inputBar($color){
+  @include bgColor($color);
+  .input-container{
+    background-color: white;
+    margin: 0 auto;
+    max-width: 300px;
+    margin-top: 40px;
+  }
+  .allpage{
+    display: flex;
+    align-items: center;
+    @include hoverAction($color);
+  }
+  .icon-wrap{
+    margin: 0 auto;
+    margin-top: 20%;
+    width: 40px;
+    svg{
+      height: 40px;
+      width: 40px;
+      path{
+        fill: white;
+      }
+    }
+  }
+}

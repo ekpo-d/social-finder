@@ -3993,6 +3993,10 @@ there.
 /* Larger than tablet */
 /* Larger than desktop */
 /* Larger than Desktop HD */
+#index .links button, #index .links svg, #index .links svg path {
+  transition: 0.6s;
+}
+
 video#bgvid {
   position: fixed;
   top: 50%;
@@ -4016,7 +4020,7 @@ video#bgvid {
 }
 
 #index .text {
-  padding-top: 25vh;
+  padding-top: 20vh;
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
@@ -4041,16 +4045,19 @@ video#bgvid {
   justify-content: center;
 }
 
-#index .links p {
-  display: inline-block;
-  padding: 5px 40px;
+#index .links button {
+  padding: 4px 40px;
   font-size: 1.3em;
-  margin-bottom: 0;
-}
-
-#index .links .b-round {
   border: 2px solid white;
   margin-right: 30px;
+  color: white;
+  height: auto;
+  border-radius: 0;
+}
+
+#index .links button:hover {
+  color: black;
+  background: white;
 }
 
 #index .links .facebook:hover path {
@@ -4074,13 +4081,85 @@ video#bgvid {
 }
 
 #index .links svg {
-  transition: 0.8s;
   height: 50px;
   width: 50px;
-  margin: 0 30px;
 }
 
 #index .links svg path {
-  transition: 0.8s;
   fill: white;
+}
+
+#index .links .icon-container {
+  margin: 0 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  #index .text {
+    padding-top: 30vh;
+  }
+  #index .text h1 {
+    font-size: 4em;
+  }
+  #index .text img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 768px) {
+  #index .text h1 {
+    font-size: 4em;
+  }
+  #index .text img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #index .text {
+    padding-top: 10vh;
+  }
+  #index .text h1 {
+    font-size: 3em;
+    padding: 0 10px;
+  }
+  #index .text p {
+    font-size: 1.2em;
+  }
+  #index .text img {
+    width: 40px;
+    height: 40px;
+  }
+  #index .links {
+    display: block;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  #index .links .b-round {
+    margin-right: 0;
+    font-size: 1.2em;
+  }
+  #index .links svg {
+    display: block;
+    height: 30px;
+    width: 30px;
+    margin: 20px auto;
+  }
+  #index .links .facebook {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  #index .text {
+    padding-top: 7vh;
+  }
+  #index .text h1 {
+    font-size: 2.2em;
+  }
+  #index .text img {
+    width: 30px;
+    height: 30px;
+  }
 }
