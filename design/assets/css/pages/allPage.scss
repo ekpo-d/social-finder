@@ -43,7 +43,8 @@
   .eight.columns{
     width: 66.666%;
   }
-  nav{
-    @extend %navBar;
-  }
+
+}
+nav{
+  @extend %navBar;
 }

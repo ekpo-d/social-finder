@@ -8,12 +8,14 @@ $linkedin : #007bb6;
 $github : #201e1f;
 
 %transition{
+  -webkit-transition: $speed;
   transition: $speed;
 }
 %navBar{
   top: 50%;
   left: 0;
   position: fixed;
+  -webkit-transform: translateX(-45%) translateY(-50%) rotate(90deg);
   transform: translateX(-45%) translateY(-50%) rotate(90deg);
   z-index: 1;
 
@@ -23,7 +25,7 @@ $github : #201e1f;
   }
   li{
     display: inline-block;
-    font-size: 1.3em;
+    font-size: 1.2em;
     padding: 0 10px;
   }
 }
@@ -77,8 +79,12 @@ $github : #201e1f;
     margin-top: 40px;
   }
   .allpage{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     @include hoverAction($color);
   }
   .icon-wrap{
@@ -91,6 +97,80 @@ $github : #201e1f;
       path{
         fill: white;
       }
+    }
+  }
+}
+@media screen and (max-width: 1024px){
+    #index .text{
+      padding-top: 30vh;
+    h1{
+      font-size: 4em;
+    }
+    img{
+      width: 50px;
+      height: 50px;
+      }
+    }
+  }
+  @media screen and (min-width: 701px)
+                and (max-width: 768px){
+      #index .text{
+        h1{
+          font-size: 4em;
+        }
+        img{
+          width: 50px;
+          height: 50px;
+        }
+      }
+  }
+@media screen and (max-width: 768px){
+
+}
+@media screen and (max-width: 700px){
+  #index .text{
+    padding-top: 10vh;
+  h1{
+    font-size: 3em;
+    padding: 0 10px;
+  }
+  p{
+    font-size: 1.2em;
+  }
+  img{
+    width: 40px;
+    height: 40px;
+    }
+  }
+  #index .links{
+    display: block;
+    max-width: 300px;
+    margin: 0 auto;
+
+    .b-round{
+      margin-right: 0;
+      font-size: 1.2em;
+    }
+    svg{
+      display: block;
+      height: 30px;
+      width: 30px;
+      margin: 20px auto;
+    }
+    .facebook{
+      margin-top: 50px;
+    }
+  }
+}
+@media screen and (max-width: 330px){
+  #index .text{
+    padding-top: 7vh;
+  h1{
+    font-size: 2.2em;
+    }
+  img{
+    width: 30px;
+    height: 30px;
     }
   }
 }
