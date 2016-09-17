@@ -1,0 +1,26 @@
+@import '../normalize';
+@import '../animate';
+@import '../skeleton';
+@import '../placeholders';
+
+#page{
+  .content, nav{
+    display: inline;
+  }
+  .row{
+    margin-left: 80px;
+    iframe{
+      border: 0;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 98vh;
+      overflow-y: hidden;
+    }
+  }
+}
+nav{
+  @extend %navBar;
+}
+
+@import '../mediaqueries';
