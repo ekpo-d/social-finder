@@ -1,5 +1,9 @@
+global.rootRequire = function(name) {
+    return require(__dirname + '/' + name);
+}
+
 var http = require('http')
-var router = require ('./router/router.js')
+var router = rootRequire('router/router.js')
 
 function mainProcess(req, res){
   res.writeHead(200, {'Content-Type' : 'text/plain'})
