@@ -11,8 +11,8 @@
     width: 100%;
     height: 400px;
   }
-  #allPage .row .twitter .icon-wrap {
-    margin-top: 20%;
+  #allPage .row .facebook .icon-wrap, #allPage .row .twitter .icon-wrap, #allPage .row .instagram .icon-wrap, #allPage .row .linkedin .icon-wrap, #allPage .row .github .icon-wrap {
+    margin-top: 15%;
   }
     #index .text{
       padding-top: 30vh;
@@ -93,8 +93,14 @@
   #allPage .row .allpage p, #allPage .row .allpage svg{
     padding: 0 10px;
   }
+  #allPage .row .allpage p{
+    display: none;
+  }
 }
 @media screen and (max-width: 330px){
+  #index{
+    height: 100%;
+  }
   #index .text{
     padding-top: 7vh;
   h1{

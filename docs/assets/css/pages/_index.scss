@@ -1,9 +1,3 @@
-@import '../normalize';
-@import '../animate';
-@import '../skeleton';
-@import '../placeholders';
-
-
 video#bgvid{
   position: fixed;
   top: 50%;
@@ -106,6 +100,3 @@ video#bgvid{
     }
   }
 }
-
-
-@import '../mediaqueries';

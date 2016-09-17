@@ -1,8 +1,3 @@
-@import '../normalize';
-@import '../animate';
-@import '../skeleton';
-@import '../placeholders';
-
 #allPage{
   .content, nav{
     display: inline;
@@ -42,6 +37,3 @@
 nav{
   @extend %navBar;
 }
-
-
-@import '../mediaqueries';

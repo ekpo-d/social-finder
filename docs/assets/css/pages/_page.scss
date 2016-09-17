@@ -1,8 +1,3 @@
-@import '../normalize';
-@import '../animate';
-@import '../skeleton';
-@import '../placeholders';
-
 #page{
   .content, nav{
     display: inline;
@@ -19,8 +14,3 @@
     }
   }
 }
-nav{
-  @extend %navBar;
-}
-
-@import '../mediaqueries';
