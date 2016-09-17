@@ -1120,7 +1120,7 @@ video#bgvid {
 }
 
 #allPage .row .facebook .allpage p {
-  width: 150px;
+  width: 100px;
   margin: 0;
   font-size: 1.3em;
   color: #3b5998;
@@ -1134,6 +1134,7 @@ video#bgvid {
   border-radius: 0;
   border-color: #3b5998;
   color: black;
+  width: 200px;
 }
 
 #allPage .row .facebook .allpage input:hover {
@@ -1190,7 +1191,7 @@ video#bgvid {
 }
 
 #allPage .row .twitter .allpage p {
-  width: 150px;
+  width: 100px;
   margin: 0;
   font-size: 1.3em;
   color: #36b9ff;
@@ -1204,6 +1205,7 @@ video#bgvid {
   border-radius: 0;
   border-color: #36b9ff;
   color: black;
+  width: 200px;
 }
 
 #allPage .row .twitter .allpage input:hover {
@@ -1264,7 +1266,7 @@ video#bgvid {
 }
 
 #allPage .row .instagram .allpage p {
-  width: 150px;
+  width: 100px;
   margin: 0;
   font-size: 1.3em;
   color: #bc39a8;
@@ -1278,6 +1280,7 @@ video#bgvid {
   border-radius: 0;
   border-color: #bc39a8;
   color: black;
+  width: 200px;
 }
 
 #allPage .row .instagram .allpage input:hover {
@@ -1334,7 +1337,7 @@ video#bgvid {
 }
 
 #allPage .row .linkedin .allpage p {
-  width: 150px;
+  width: 100px;
   margin: 0;
   font-size: 1.3em;
   color: #007bb6;
@@ -1348,6 +1351,7 @@ video#bgvid {
   border-radius: 0;
   border-color: #007bb6;
   color: black;
+  width: 200px;
 }
 
 #allPage .row .linkedin .allpage input:hover {
@@ -1404,7 +1408,7 @@ video#bgvid {
 }
 
 #allPage .row .github .allpage p {
-  width: 150px;
+  width: 100px;
   margin: 0;
   font-size: 1.3em;
   color: #201e1f;
@@ -1418,6 +1422,7 @@ video#bgvid {
   border-radius: 0;
   border-color: #201e1f;
   color: black;
+  width: 200px;
 }
 
 #allPage .row .github .allpage input:hover {
