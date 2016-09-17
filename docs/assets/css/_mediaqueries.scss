@@ -47,7 +47,7 @@
     }
   }
 
-  #allPage .row{
+  #allPage .row, #page .row{
     margin-left: 60px;
   }
 }
@@ -89,6 +89,9 @@
 @media screen and (max-width: 425px){
   #allPage .row .facebook .icon-wrap, #allPage .row .twitter .icon-wrap, #allPage .row .instagram .icon-wrap, #allPage .row .linkedin .icon-wrap, #allPage .row .github .icon-wrap  {
     margin-top: 40%;
+  }
+  #allPage .row .allpage p, #allPage .row .allpage svg{
+    padding: 0 10px;
   }
 }
 @media screen and (max-width: 330px){
