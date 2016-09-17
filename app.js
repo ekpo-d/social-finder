@@ -14,5 +14,5 @@ http.createServer(function(req, res){
   router.home(req, res)
   router.user(req, res)
   // res.end('the end of the code.')
-}).listen(5000, '127.0.0.1')
+}).listen(process.env.PORT || 8080)
 console.log('server is running')
