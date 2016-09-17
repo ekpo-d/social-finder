@@ -1,18 +1,11 @@
-var router = require('./router.js')
-// Problem:
-// we need a simple way to look at a user's badge
-// count and Javascript points from a web browser
+var http = require('http'),
+    router = require('./router/router.js')
 
-// Solution:
-// use node.js to perform the profile look ups
-// and serve our templates via HTTP
+function mainProcess(req, res){
+  res.writeHead(200, {'Content-Type' : 'text/plain'})
+  router(req, res)
+  res.end()
+}
 
-// create a web server
-var http = require('http')
-http.createServer(function(req, res){
-  res.writeHead(200, {'Content-Type': 'text/plain'})
-  router.home(req, res)
-  router.user(req, res)
-  // res.end('the end of the code.')
-}).listen(process.env.PORT || 8080)
+http.createServer(mainProcess).listen(process.env.PORT || 8080)
 console.log('server is running')
