@@ -8,12 +8,14 @@ $linkedin : #007bb6;
 $github : #201e1f;
 
 %transition{
+  -webkit-transition: $speed;
   transition: $speed;
 }
 %navBar{
   top: 50%;
   left: 0;
   position: fixed;
+  -webkit-transform: translateX(-45%) translateY(-50%) rotate(90deg);
   transform: translateX(-45%) translateY(-50%) rotate(90deg);
   z-index: 1;
 
@@ -23,7 +25,7 @@ $github : #201e1f;
   }
   li{
     display: inline-block;
-    font-size: 1.3em;
+    font-size: 1.2em;
     padding: 0 10px;
   }
 }
@@ -77,8 +79,12 @@ $github : #201e1f;
     margin-top: 40px;
   }
   .allpage{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     @include hoverAction($color);
   }
   .icon-wrap{

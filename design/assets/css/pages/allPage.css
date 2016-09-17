@@ -4013,77 +4013,6 @@ nav li {
   padding: 0 10px;
 }
 
-@media screen and (max-width: 1024px) {
-  #index .text {
-    padding-top: 30vh;
-  }
-  #index .text h1 {
-    font-size: 4em;
-  }
-  #index .text img {
-    width: 50px;
-    height: 50px;
-  }
-}
-
-@media screen and (min-width: 701px) and (max-width: 768px) {
-  #index .text h1 {
-    font-size: 4em;
-  }
-  #index .text img {
-    width: 50px;
-    height: 50px;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  #index .text {
-    padding-top: 10vh;
-  }
-  #index .text h1 {
-    font-size: 3em;
-    padding: 0 10px;
-  }
-  #index .text p {
-    font-size: 1.2em;
-  }
-  #index .text img {
-    width: 40px;
-    height: 40px;
-  }
-  #index .links {
-    display: block;
-    max-width: 300px;
-    margin: 0 auto;
-  }
-  #index .links .b-round {
-    margin-right: 0;
-    font-size: 1.2em;
-  }
-  #index .links svg {
-    display: block;
-    height: 30px;
-    width: 30px;
-    margin: 20px auto;
-  }
-  #index .links .facebook {
-    margin-top: 50px;
-  }
-}
-
-@media screen and (max-width: 330px) {
-  #index .text {
-    padding-top: 7vh;
-  }
-  #index .text h1 {
-    font-size: 2.2em;
-  }
-  #index .text img {
-    width: 30px;
-    height: 30px;
-  }
-}
-
 #allPage .content, #allPage nav {
   display: inline;
 }
@@ -4457,10 +4386,109 @@ nav li {
   min-height: 300px;
 }
 
-#allPage .four.columns {
-  width: 33.333%;
+@media screen and (min-width: 1280px) {
+  .four.columns {
+    width: 33.333%;
+  }
+  .eight.columns {
+    width: 66.666%;
+  }
 }
 
-#allPage .eight.columns {
-  width: 66.666%;
+@media screen and (max-width: 1024px) {
+  #allPage .row .columns {
+    width: 100%;
+    height: 400px;
+  }
+  #allPage .row .twitter .icon-wrap {
+    margin-top: 20%;
+  }
+  #index .text {
+    padding-top: 30vh;
+  }
+  #index .text h1 {
+    font-size: 4em;
+  }
+  #index .text img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 768px) {
+  #index .text h1 {
+    font-size: 4em;
+  }
+  #index .text img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    top: 50%;
+    min-width: 500px;
+  }
+  nav li {
+    font-size: 0.9em;
+    padding: 0 5px;
+  }
+  #allPage .row {
+    margin-left: 60px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #index .text {
+    padding-top: 10vh;
+  }
+  #index .text h1 {
+    font-size: 3em;
+    padding: 0 10px;
+  }
+  #index .text p {
+    font-size: 1.2em;
+  }
+  #index .text img {
+    width: 40px;
+    height: 40px;
+  }
+  #index .links {
+    display: block;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  #index .links .b-round {
+    margin-right: 0;
+    font-size: 1.2em;
+  }
+  #index .links svg {
+    display: block;
+    height: 30px;
+    width: 30px;
+    margin: 20px auto;
+  }
+  #index .links .facebook {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #allPage .row .facebook .icon-wrap, #allPage .row .twitter .icon-wrap, #allPage .row .instagram .icon-wrap, #allPage .row .linkedin .icon-wrap, #allPage .row .github .icon-wrap {
+    margin-top: 40%;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  #index .text {
+    padding-top: 7vh;
+  }
+  #index .text h1 {
+    font-size: 2.2em;
+  }
+  #index .text img {
+    width: 30px;
+    height: 30px;
+  }
 }

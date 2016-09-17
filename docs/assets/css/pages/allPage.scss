@@ -37,13 +37,11 @@
     color: white;
     min-height: 300px;
   }
-  .four.columns{
-    width: 33.333%;
-  }
-  .eight.columns{
-    width: 66.666%;
-  }
-  nav{
-    @extend %navBar;
-  }
+
 }
+nav{
+  @extend %navBar;
+}
+
+
+@import '../mediaqueries';
