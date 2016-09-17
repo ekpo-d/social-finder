@@ -1,0 +1,111 @@
+@import '../normalize';
+@import '../animate';
+@import '../skeleton';
+@import '../placeholders';
+
+
+video#bgvid{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(../../img/bg.png);
+  background-size: cover;
+}
+
+#index{
+  height: 100vh;
+  background-color: rgba(8, 135, 193, 0.35);
+
+  .text{
+    padding-top: 20vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+
+    h1{
+      padding: 0 50px;
+      font-size: 8em;
+      display: inline-block;
+      margin-bottom: 0;
+    }
+    p{
+      padding-top: 20px;
+      font-size: 1.8em;
+    }
+
+  }
+  .links{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+
+    button{
+      padding: 4px 40px;
+      font-size: 1.3em;
+      border: 2px solid white;
+      margin-right: 30px;
+      color: white;
+      height: auto;
+      border-radius: 0;
+      @extend %transition;
+
+      &:hover{
+        color: black;
+        background: white;
+      }
+    }
+    .facebook{
+      &:hover{
+        @include fillColor($facebook);
+      }
+    }
+    .twitter{
+      &:hover{
+        @include fillColor($twitter);
+      }
+    }
+    .instagram{
+      &:hover{
+        @include fillColor($instagram);
+      }
+    }
+    .linkedin{
+      &:hover{
+        @include fillColor($linkedin);
+      }
+    }
+    .github{
+      &:hover{
+        @include fillColor($github);
+      }
+    }
+    svg{
+      @extend %transition;
+      height: 50px;
+      width: 50px;
+
+      path{
+        @extend %transition;
+        fill: white;
+      }
+    }
+    .icon-container{
+      margin: 0 30px;
+    }
+  }
+}
+
+
+@import '../mediaqueries';
