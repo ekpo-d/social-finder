@@ -3,7 +3,7 @@ var http = require('http'),
 
 function mainProcess(req, res){
   res.writeHead(200, {'Content-Type' : 'text/plain'})
-  router(req, res)
+  router.routeHandler(req, res)
   res.end()
 }
 

@@ -8,4 +8,4 @@ function routeHandler(req, res){
   }
 }
 
-module.exports = routeHandler
+module.exports.routeHandler = routeHandler
