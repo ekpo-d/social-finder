@@ -1006,7 +1006,6 @@ video#bgvid {
 
 #index {
   height: 100vh;
-  background-color: rgba(8, 135, 193, 0.35);
 }
 
 #index .text {
@@ -1106,7 +1105,7 @@ video#bgvid {
   margin-top: 40px;
 }
 
-#allPage .row .facebook .allpage {
+#allPage .row .facebook .allpage, #allPage .row .facebook form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1115,19 +1114,19 @@ video#bgvid {
   align-items: center;
 }
 
-#allPage .row .facebook .allpage path {
+#allPage .row .facebook .allpage path, #allPage .row .facebook form path {
   fill: #3b5998;
 }
 
-#allPage .row .facebook .allpage p {
-  width: 150px;
+#allPage .row .facebook .allpage p, #allPage .row .facebook form p {
+  width: 100px;
   margin: 0;
   font-size: 1.3em;
   color: #3b5998;
   padding: 0 10px;
 }
 
-#allPage .row .facebook .allpage input {
+#allPage .row .facebook .allpage input, #allPage .row .facebook form input {
   margin: 0;
   border-top: 0;
   border-bottom: 0;
@@ -1136,18 +1135,30 @@ video#bgvid {
   color: black;
 }
 
-#allPage .row .facebook .allpage input:hover {
+#allPage .row .facebook .allpage input:hover, #allPage .row .facebook form input:hover {
   border-color: #3b5998;
 }
 
-#allPage .row .facebook .allpage svg {
+#allPage .row .facebook .allpage svg, #allPage .row .facebook form svg {
   height: 20px;
   width: 50px;
   padding: 0 10px;
 }
 
-#allPage .row .facebook .allpage svg path {
+#allPage .row .facebook .allpage svg path, #allPage .row .facebook form svg path {
   fill: #3b5998;
+}
+
+#allPage .row .facebook .allpage button, #allPage .row .facebook form button {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  height: 25px;
+}
+
+#allPage .row .facebook .allpage form, #allPage .row .facebook form form {
+  margin-bottom: 0;
+  width: 100%;
 }
 
 #allPage .row .facebook .icon-wrap {
@@ -1176,7 +1187,7 @@ video#bgvid {
   margin-top: 40px;
 }
 
-#allPage .row .twitter .allpage {
+#allPage .row .twitter .allpage, #allPage .row .twitter form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1185,19 +1196,19 @@ video#bgvid {
   align-items: center;
 }
 
-#allPage .row .twitter .allpage path {
+#allPage .row .twitter .allpage path, #allPage .row .twitter form path {
   fill: #36b9ff;
 }
 
-#allPage .row .twitter .allpage p {
-  width: 150px;
+#allPage .row .twitter .allpage p, #allPage .row .twitter form p {
+  width: 100px;
   margin: 0;
   font-size: 1.3em;
   color: #36b9ff;
   padding: 0 10px;
 }
 
-#allPage .row .twitter .allpage input {
+#allPage .row .twitter .allpage input, #allPage .row .twitter form input {
   margin: 0;
   border-top: 0;
   border-bottom: 0;
@@ -1206,18 +1217,30 @@ video#bgvid {
   color: black;
 }
 
-#allPage .row .twitter .allpage input:hover {
+#allPage .row .twitter .allpage input:hover, #allPage .row .twitter form input:hover {
   border-color: #36b9ff;
 }
 
-#allPage .row .twitter .allpage svg {
+#allPage .row .twitter .allpage svg, #allPage .row .twitter form svg {
   height: 20px;
   width: 50px;
   padding: 0 10px;
 }
 
-#allPage .row .twitter .allpage svg path {
+#allPage .row .twitter .allpage svg path, #allPage .row .twitter form svg path {
   fill: #36b9ff;
+}
+
+#allPage .row .twitter .allpage button, #allPage .row .twitter form button {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  height: 25px;
+}
+
+#allPage .row .twitter .allpage form, #allPage .row .twitter form form {
+  margin-bottom: 0;
+  width: 100%;
 }
 
 #allPage .row .twitter .icon-wrap {
@@ -1250,7 +1273,7 @@ video#bgvid {
   margin-top: 40px;
 }
 
-#allPage .row .instagram .allpage {
+#allPage .row .instagram .allpage, #allPage .row .instagram form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1259,19 +1282,19 @@ video#bgvid {
   align-items: center;
 }
 
-#allPage .row .instagram .allpage path {
+#allPage .row .instagram .allpage path, #allPage .row .instagram form path {
   fill: #bc39a8;
 }
 
-#allPage .row .instagram .allpage p {
-  width: 150px;
+#allPage .row .instagram .allpage p, #allPage .row .instagram form p {
+  width: 100px;
   margin: 0;
   font-size: 1.3em;
   color: #bc39a8;
   padding: 0 10px;
 }
 
-#allPage .row .instagram .allpage input {
+#allPage .row .instagram .allpage input, #allPage .row .instagram form input {
   margin: 0;
   border-top: 0;
   border-bottom: 0;
@@ -1280,18 +1303,30 @@ video#bgvid {
   color: black;
 }
 
-#allPage .row .instagram .allpage input:hover {
+#allPage .row .instagram .allpage input:hover, #allPage .row .instagram form input:hover {
   border-color: #bc39a8;
 }
 
-#allPage .row .instagram .allpage svg {
+#allPage .row .instagram .allpage svg, #allPage .row .instagram form svg {
   height: 20px;
   width: 50px;
   padding: 0 10px;
 }
 
-#allPage .row .instagram .allpage svg path {
+#allPage .row .instagram .allpage svg path, #allPage .row .instagram form svg path {
   fill: #bc39a8;
+}
+
+#allPage .row .instagram .allpage button, #allPage .row .instagram form button {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  height: 25px;
+}
+
+#allPage .row .instagram .allpage form, #allPage .row .instagram form form {
+  margin-bottom: 0;
+  width: 100%;
 }
 
 #allPage .row .instagram .icon-wrap {
@@ -1320,7 +1355,7 @@ video#bgvid {
   margin-top: 40px;
 }
 
-#allPage .row .linkedin .allpage {
+#allPage .row .linkedin .allpage, #allPage .row .linkedin form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1329,19 +1364,19 @@ video#bgvid {
   align-items: center;
 }
 
-#allPage .row .linkedin .allpage path {
+#allPage .row .linkedin .allpage path, #allPage .row .linkedin form path {
   fill: #007bb6;
 }
 
-#allPage .row .linkedin .allpage p {
-  width: 150px;
+#allPage .row .linkedin .allpage p, #allPage .row .linkedin form p {
+  width: 100px;
   margin: 0;
   font-size: 1.3em;
   color: #007bb6;
   padding: 0 10px;
 }
 
-#allPage .row .linkedin .allpage input {
+#allPage .row .linkedin .allpage input, #allPage .row .linkedin form input {
   margin: 0;
   border-top: 0;
   border-bottom: 0;
@@ -1350,18 +1385,30 @@ video#bgvid {
   color: black;
 }
 
-#allPage .row .linkedin .allpage input:hover {
+#allPage .row .linkedin .allpage input:hover, #allPage .row .linkedin form input:hover {
   border-color: #007bb6;
 }
 
-#allPage .row .linkedin .allpage svg {
+#allPage .row .linkedin .allpage svg, #allPage .row .linkedin form svg {
   height: 20px;
   width: 50px;
   padding: 0 10px;
 }
 
-#allPage .row .linkedin .allpage svg path {
+#allPage .row .linkedin .allpage svg path, #allPage .row .linkedin form svg path {
   fill: #007bb6;
+}
+
+#allPage .row .linkedin .allpage button, #allPage .row .linkedin form button {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  height: 25px;
+}
+
+#allPage .row .linkedin .allpage form, #allPage .row .linkedin form form {
+  margin-bottom: 0;
+  width: 100%;
 }
 
 #allPage .row .linkedin .icon-wrap {
@@ -1390,7 +1437,7 @@ video#bgvid {
   margin-top: 40px;
 }
 
-#allPage .row .github .allpage {
+#allPage .row .github .allpage, #allPage .row .github form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1399,19 +1446,19 @@ video#bgvid {
   align-items: center;
 }
 
-#allPage .row .github .allpage path {
+#allPage .row .github .allpage path, #allPage .row .github form path {
   fill: #201e1f;
 }
 
-#allPage .row .github .allpage p {
-  width: 150px;
+#allPage .row .github .allpage p, #allPage .row .github form p {
+  width: 100px;
   margin: 0;
   font-size: 1.3em;
   color: #201e1f;
   padding: 0 10px;
 }
 
-#allPage .row .github .allpage input {
+#allPage .row .github .allpage input, #allPage .row .github form input {
   margin: 0;
   border-top: 0;
   border-bottom: 0;
@@ -1420,18 +1467,30 @@ video#bgvid {
   color: black;
 }
 
-#allPage .row .github .allpage input:hover {
+#allPage .row .github .allpage input:hover, #allPage .row .github form input:hover {
   border-color: #201e1f;
 }
 
-#allPage .row .github .allpage svg {
+#allPage .row .github .allpage svg, #allPage .row .github form svg {
   height: 20px;
   width: 50px;
   padding: 0 10px;
 }
 
-#allPage .row .github .allpage svg path {
+#allPage .row .github .allpage svg path, #allPage .row .github form svg path {
   fill: #201e1f;
+}
+
+#allPage .row .github .allpage button, #allPage .row .github form button {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  height: 25px;
+}
+
+#allPage .row .github .allpage form, #allPage .row .github form form {
+  margin-bottom: 0;
+  width: 100%;
 }
 
 #allPage .row .github .icon-wrap {
@@ -1477,6 +1536,491 @@ video#bgvid {
   overflow-y: hidden;
 }
 
+#fb .content, #fb nav {
+  display: inline;
+}
+
+#fb .row {
+  margin-left: 80px;
+  height: 100vh;
+  background-color: #3b5998;
+}
+
+#fb .row .contain {
+  background-color: #3b5998;
+}
+
+#fb .row .contain .input-container {
+  background-color: white;
+  margin: 0 auto;
+  max-width: 300px;
+  margin-top: 40px;
+}
+
+#fb .row .contain .allpage, #fb .row .contain form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#fb .row .contain .allpage path, #fb .row .contain form path {
+  fill: #3b5998;
+}
+
+#fb .row .contain .allpage p, #fb .row .contain form p {
+  width: 100px;
+  margin: 0;
+  font-size: 1.3em;
+  color: #3b5998;
+  padding: 0 10px;
+}
+
+#fb .row .contain .allpage input, #fb .row .contain form input {
+  margin: 0;
+  border-top: 0;
+  border-bottom: 0;
+  border-radius: 0;
+  border-color: #3b5998;
+  color: black;
+}
+
+#fb .row .contain .allpage input:hover, #fb .row .contain form input:hover {
+  border-color: #3b5998;
+}
+
+#fb .row .contain .allpage svg, #fb .row .contain form svg {
+  height: 20px;
+  width: 50px;
+  padding: 0 10px;
+}
+
+#fb .row .contain .allpage svg path, #fb .row .contain form svg path {
+  fill: #3b5998;
+}
+
+#fb .row .contain .allpage button, #fb .row .contain form button {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  height: 25px;
+}
+
+#fb .row .contain .allpage form, #fb .row .contain form form {
+  margin-bottom: 0;
+  width: 100%;
+}
+
+#fb .row .contain .icon-wrap {
+  margin: 0 auto;
+  margin-top: 20%;
+  width: 40px;
+}
+
+#fb .row .contain .icon-wrap svg {
+  height: 40px;
+  width: 40px;
+}
+
+#fb .row .contain .icon-wrap svg path {
+  fill: white;
+}
+
+#fb .row .contain .icon-wrap {
+  margin-top: 0;
+  padding-top: 20%;
+}
+
+#tw .content, #tw nav {
+  display: inline;
+}
+
+#tw .row {
+  margin-left: 80px;
+  height: 100vh;
+  background-color: #36b9ff;
+}
+
+#tw .row .contain {
+  background-color: #36b9ff;
+}
+
+#tw .row .contain .input-container {
+  background-color: white;
+  margin: 0 auto;
+  max-width: 300px;
+  margin-top: 40px;
+}
+
+#tw .row .contain .allpage, #tw .row .contain form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#tw .row .contain .allpage path, #tw .row .contain form path {
+  fill: #36b9ff;
+}
+
+#tw .row .contain .allpage p, #tw .row .contain form p {
+  width: 100px;
+  margin: 0;
+  font-size: 1.3em;
+  color: #36b9ff;
+  padding: 0 10px;
+}
+
+#tw .row .contain .allpage input, #tw .row .contain form input {
+  margin: 0;
+  border-top: 0;
+  border-bottom: 0;
+  border-radius: 0;
+  border-color: #36b9ff;
+  color: black;
+}
+
+#tw .row .contain .allpage input:hover, #tw .row .contain form input:hover {
+  border-color: #36b9ff;
+}
+
+#tw .row .contain .allpage svg, #tw .row .contain form svg {
+  height: 20px;
+  width: 50px;
+  padding: 0 10px;
+}
+
+#tw .row .contain .allpage svg path, #tw .row .contain form svg path {
+  fill: #36b9ff;
+}
+
+#tw .row .contain .allpage button, #tw .row .contain form button {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  height: 25px;
+}
+
+#tw .row .contain .allpage form, #tw .row .contain form form {
+  margin-bottom: 0;
+  width: 100%;
+}
+
+#tw .row .contain .icon-wrap {
+  margin: 0 auto;
+  margin-top: 20%;
+  width: 40px;
+}
+
+#tw .row .contain .icon-wrap svg {
+  height: 40px;
+  width: 40px;
+}
+
+#tw .row .contain .icon-wrap svg path {
+  fill: white;
+}
+
+#tw .row .contain .icon-wrap {
+  margin-top: 0;
+  padding-top: 20%;
+}
+
+#in .content, #in nav {
+  display: inline;
+}
+
+#in .row {
+  margin-left: 80px;
+  height: 100vh;
+  background-color: #bc39a8;
+}
+
+#in .row .contain {
+  background-color: #bc39a8;
+}
+
+#in .row .contain .input-container {
+  background-color: white;
+  margin: 0 auto;
+  max-width: 300px;
+  margin-top: 40px;
+}
+
+#in .row .contain .allpage, #in .row .contain form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#in .row .contain .allpage path, #in .row .contain form path {
+  fill: #bc39a8;
+}
+
+#in .row .contain .allpage p, #in .row .contain form p {
+  width: 100px;
+  margin: 0;
+  font-size: 1.3em;
+  color: #bc39a8;
+  padding: 0 10px;
+}
+
+#in .row .contain .allpage input, #in .row .contain form input {
+  margin: 0;
+  border-top: 0;
+  border-bottom: 0;
+  border-radius: 0;
+  border-color: #bc39a8;
+  color: black;
+}
+
+#in .row .contain .allpage input:hover, #in .row .contain form input:hover {
+  border-color: #bc39a8;
+}
+
+#in .row .contain .allpage svg, #in .row .contain form svg {
+  height: 20px;
+  width: 50px;
+  padding: 0 10px;
+}
+
+#in .row .contain .allpage svg path, #in .row .contain form svg path {
+  fill: #bc39a8;
+}
+
+#in .row .contain .allpage button, #in .row .contain form button {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  height: 25px;
+}
+
+#in .row .contain .allpage form, #in .row .contain form form {
+  margin-bottom: 0;
+  width: 100%;
+}
+
+#in .row .contain .icon-wrap {
+  margin: 0 auto;
+  margin-top: 20%;
+  width: 40px;
+}
+
+#in .row .contain .icon-wrap svg {
+  height: 40px;
+  width: 40px;
+}
+
+#in .row .contain .icon-wrap svg path {
+  fill: white;
+}
+
+#in .row .contain .icon-wrap {
+  margin-top: 0;
+  padding-top: 20%;
+}
+
+#li .content, #li nav {
+  display: inline;
+}
+
+#li .row {
+  margin-left: 80px;
+  height: 100vh;
+  background-color: #007bb6;
+}
+
+#li .row .contain {
+  background-color: #007bb6;
+}
+
+#li .row .contain .input-container {
+  background-color: white;
+  margin: 0 auto;
+  max-width: 300px;
+  margin-top: 40px;
+}
+
+#li .row .contain .allpage, #li .row .contain form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#li .row .contain .allpage path, #li .row .contain form path {
+  fill: #007bb6;
+}
+
+#li .row .contain .allpage p, #li .row .contain form p {
+  width: 100px;
+  margin: 0;
+  font-size: 1.3em;
+  color: #007bb6;
+  padding: 0 10px;
+}
+
+#li .row .contain .allpage input, #li .row .contain form input {
+  margin: 0;
+  border-top: 0;
+  border-bottom: 0;
+  border-radius: 0;
+  border-color: #007bb6;
+  color: black;
+}
+
+#li .row .contain .allpage input:hover, #li .row .contain form input:hover {
+  border-color: #007bb6;
+}
+
+#li .row .contain .allpage svg, #li .row .contain form svg {
+  height: 20px;
+  width: 50px;
+  padding: 0 10px;
+}
+
+#li .row .contain .allpage svg path, #li .row .contain form svg path {
+  fill: #007bb6;
+}
+
+#li .row .contain .allpage button, #li .row .contain form button {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  height: 25px;
+}
+
+#li .row .contain .allpage form, #li .row .contain form form {
+  margin-bottom: 0;
+  width: 100%;
+}
+
+#li .row .contain .icon-wrap {
+  margin: 0 auto;
+  margin-top: 20%;
+  width: 40px;
+}
+
+#li .row .contain .icon-wrap svg {
+  height: 40px;
+  width: 40px;
+}
+
+#li .row .contain .icon-wrap svg path {
+  fill: white;
+}
+
+#li .row .contain .icon-wrap {
+  margin-top: 0;
+  padding-top: 20%;
+}
+
+#gh .content, #gh nav {
+  display: inline;
+}
+
+#gh .row {
+  margin-left: 80px;
+  height: 100vh;
+  background-color: #201e1f;
+}
+
+#gh .row .contain {
+  background-color: #201e1f;
+}
+
+#gh .row .contain .input-container {
+  background-color: white;
+  margin: 0 auto;
+  max-width: 300px;
+  margin-top: 40px;
+}
+
+#gh .row .contain .allpage, #gh .row .contain form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#gh .row .contain .allpage path, #gh .row .contain form path {
+  fill: #201e1f;
+}
+
+#gh .row .contain .allpage p, #gh .row .contain form p {
+  width: 100px;
+  margin: 0;
+  font-size: 1.3em;
+  color: #201e1f;
+  padding: 0 10px;
+}
+
+#gh .row .contain .allpage input, #gh .row .contain form input {
+  margin: 0;
+  border-top: 0;
+  border-bottom: 0;
+  border-radius: 0;
+  border-color: #201e1f;
+  color: black;
+}
+
+#gh .row .contain .allpage input:hover, #gh .row .contain form input:hover {
+  border-color: #201e1f;
+}
+
+#gh .row .contain .allpage svg, #gh .row .contain form svg {
+  height: 20px;
+  width: 50px;
+  padding: 0 10px;
+}
+
+#gh .row .contain .allpage svg path, #gh .row .contain form svg path {
+  fill: #201e1f;
+}
+
+#gh .row .contain .allpage button, #gh .row .contain form button {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  height: 25px;
+}
+
+#gh .row .contain .allpage form, #gh .row .contain form form {
+  margin-bottom: 0;
+  width: 100%;
+}
+
+#gh .row .contain .icon-wrap {
+  margin: 0 auto;
+  margin-top: 20%;
+  width: 40px;
+}
+
+#gh .row .contain .icon-wrap svg {
+  height: 40px;
+  width: 40px;
+}
+
+#gh .row .contain .icon-wrap svg path {
+  fill: white;
+}
+
+#gh .row .contain .icon-wrap {
+  margin-top: 0;
+  padding-top: 20%;
+}
+
 @media screen and (min-width: 1280px) {
   .four.columns {
     width: 33.333%;
@@ -1503,6 +2047,9 @@ video#bgvid {
   #index .text img {
     width: 50px;
     height: 50px;
+  }
+  #fb .row .contain .icon-wrap, #tw .row .contain .icon-wrap, #in .row .contain .icon-wrap, #li .row .contain .icon-wrap, #gh .row .contain .icon-wrap {
+    padding-top: 60%;
   }
 }
 
@@ -1573,6 +2120,9 @@ video#bgvid {
     padding: 0 10px;
   }
   #allPage .row .allpage p {
+    display: none;
+  }
+  #fb .row .contain .allpage p, #tw .row .contain .allpage p, #in .row .contain .allpage p, #li .row .contain .allpage p, #gh .row .contain .allpage p {
     display: none;
   }
 }
