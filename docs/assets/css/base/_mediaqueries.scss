@@ -24,6 +24,9 @@
       height: 50px;
       }
     }
+    #fb .row .contain .icon-wrap, #tw .row .contain .icon-wrap, #in .row .contain .icon-wrap, #li .row .contain .icon-wrap, #gh .row .contain .icon-wrap {
+      padding-top: 60%;
+    }
   }
   @media screen and (min-width: 701px)
                 and (max-width: 768px){
@@ -95,6 +98,9 @@
   }
   #allPage .row .allpage p{
     display: none;
+  }
+  #fb .row .contain .allpage p, #tw .row .contain .allpage p, #in .row .contain .allpage p, #li .row .contain .allpage p, #gh .row .contain .allpage p {
+      display: none
   }
 }
 @media screen and (max-width: 330px){

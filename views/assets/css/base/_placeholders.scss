@@ -27,6 +27,18 @@ $github : #201e1f;
     display: inline-block;
     font-size: 1.2em;
     padding: 0 10px;
+
+    a{
+      text-decoration: none;
+      color: #929292;
+
+      &:hover{
+        color: black;
+      }
+    }
+    .active{
+      color: black;
+    }
   }
 }
 @mixin fillColor($color){
@@ -43,7 +55,7 @@ $github : #201e1f;
       fill: $color;
     }
       p{
-        width: 150px;
+        width: 100px;
         margin: 0;
         font-size: 1.3em;
         color: $color;
@@ -78,7 +90,7 @@ $github : #201e1f;
     max-width: 300px;
     margin-top: 40px;
   }
-  .allpage{
+  .allpage, form{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -86,6 +98,16 @@ $github : #201e1f;
         -ms-flex-align: center;
             align-items: center;
     @include hoverAction($color);
+    button{
+      border: 0;
+      margin: 0;
+      padding: 0;
+      height: 25px;
+    }
+    form{
+      margin-bottom: 0;
+      width: 100%;
+    }
   }
   .icon-wrap{
     margin: 0 auto;
@@ -99,4 +121,22 @@ $github : #201e1f;
       }
     }
   }
+}
+@mixin inputUsername($color){
+    .content, nav{
+      display: inline;
+    }
+    .row{
+      margin-left: 80px;
+      height: 100vh;
+      @include bgColor($color);
+
+      .contain{
+        @include inputBar($color);
+      }
+      .contain .icon-wrap{
+        margin-top: 0;
+        padding-top: 20%;
+      }
+    }
 }

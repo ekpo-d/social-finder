@@ -11,8 +11,8 @@
     width: 100%;
     height: 400px;
   }
-  #allPage .row .twitter .icon-wrap {
-    margin-top: 20%;
+  #allPage .row .facebook .icon-wrap, #allPage .row .twitter .icon-wrap, #allPage .row .instagram .icon-wrap, #allPage .row .linkedin .icon-wrap, #allPage .row .github .icon-wrap {
+    margin-top: 15%;
   }
     #index .text{
       padding-top: 30vh;
@@ -23,6 +23,9 @@
       width: 50px;
       height: 50px;
       }
+    }
+    #fb .row .contain .icon-wrap, #tw .row .contain .icon-wrap, #in .row .contain .icon-wrap, #li .row .contain .icon-wrap, #gh .row .contain .icon-wrap {
+      padding-top: 60%;
     }
   }
   @media screen and (min-width: 701px)
@@ -93,8 +96,17 @@
   #allPage .row .allpage p, #allPage .row .allpage svg{
     padding: 0 10px;
   }
+  #allPage .row .allpage p{
+    display: none;
+  }
+  #fb .row .contain .allpage p, #tw .row .contain .allpage p, #in .row .contain .allpage p, #li .row .contain .allpage p, #gh .row .contain .allpage p {
+      display: none
+  }
 }
 @media screen and (max-width: 330px){
+  #index{
+    height: 100%;
+  }
   #index .text{
     padding-top: 7vh;
   h1{

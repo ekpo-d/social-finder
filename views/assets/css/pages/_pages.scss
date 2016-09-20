@@ -1,9 +1,4 @@
-@import '../normalize';
-@import '../animate';
-@import '../skeleton';
-@import '../placeholders';
-
-#allPage{
+#page{
   .content, nav{
     display: inline;
   }
@@ -17,8 +12,5 @@
       height: 98vh;
       overflow-y: hidden;
     }
-  }
-  nav{
-    @extend %navBar;
   }
 }

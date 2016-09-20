@@ -1,9 +1,3 @@
-@import '../normalize';
-@import '../animate';
-@import '../skeleton';
-@import '../placeholders';
-
-
 video#bgvid{
   position: fixed;
   top: 50%;
@@ -21,7 +15,6 @@ video#bgvid{
 
 #index{
   height: 100vh;
-  background-color: rgba(8, 135, 193, 0.35);
 
   .text{
     padding-top: 20vh;
@@ -106,6 +99,3 @@ video#bgvid{
     }
   }
 }
-
-
-@import '../mediaqueries';
