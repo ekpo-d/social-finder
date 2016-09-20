@@ -1,0 +1,39 @@
+#allPage{
+  .content, nav{
+    display: inline;
+  }
+  .row{
+    margin-left: 80px;
+    .facebook{
+      @include inputBar($facebook);
+    }
+    .twitter{
+      @include inputBar($twitter);
+      .icon-wrap{
+        margin-top: 40%;
+      }
+    }
+    .instagram{
+      @include inputBar($instagram);
+    }
+    .linkedin{
+      @include inputBar($linkedin);
+    }
+    .github{
+      @include inputBar($github);
+    }
+    .facebook, .twitter{
+      height: 500px;
+    }
+  }
+  .columns{
+    margin: 0;
+    padding: 0;
+    color: white;
+    min-height: 300px;
+  }
+
+}
+nav{
+  @extend %navBar;
+}
